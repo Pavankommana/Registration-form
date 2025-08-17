@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Internship Registration</h1>
+    <form id="regForm">
+      <label for="fullName">Full Name</label>
+      <input 
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your name"
+        required 
+      />
+
+      <label for="email">Email Address</label>
+      <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email" 
+        required 
+      />
+
+      <label for="phone">Phone Number</label>
+      <input 
+        type="tel" 
+        id="phone"
+        name="phone"
+        placeholder="Enter your phone number"
+        required 
+      />
+
+      <label for="course">Course / Branch</label>
+      <select id="course" name="course" required>
+        <option value="">-- Select course --</option>
+        <option value="CSE">CSE</option>
+        <option value="CSE-AI">CSE-AI</option>
+        <option value="CSE-AIML">CSE-AIML</option>
+        <option value="CSE-DS">CSE-DS</option>
+        <option value="ECE">ECE</option>
+        <option value="IT">IT</option>
+        <option value="EEE">EEE</option>
+        <option value="CIVIL">CIVIL</option>
+        <option value="MECH">MECH</option>
+      </select>
+
+      <label for="year">Year of Study</label>
+      <select id="year" name="year" required>
+        <option value="">-- Select year --</option>
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+      </select>
+
+      <label for="skills">Skills (optional)</label>
+      <textarea id="skills" name="skills" rows="3"></textarea>
+
+      <button type="submit">
+        Register
+      </button>
+    </form>
+  </div>
+
+  <script src = "script.js"></script>
+</body>
+</html>
